@@ -4303,7 +4303,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Button.Cnds.OnClicked,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Touch.Cnds.OnTapGestureObject
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
+		C3.Plugins.Sprite.Cnds.IsVisible,
+		C3.Plugins.Sprite.Acts.SetAnim
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4345,7 +4347,9 @@ self.C3_JsPropNameTable = [
 	{查看詳解: 0},
 	{平鋪背景4: 0},
 	{Sprite: 0},
-	{Sprite3: 0}
+	{Sprite3: 0},
+	{羊駝: 0},
+	{小黑: 0}
 ];
 
 self.InstanceType = {
@@ -4385,7 +4389,9 @@ self.InstanceType = {
 	查看詳解: class extends self.ISpriteInstance {},
 	平鋪背景4: class extends self.ITiledBackgroundInstance {},
 	Sprite: class extends self.ISpriteInstance {},
-	Sprite3: class extends self.ISpriteInstance {}
+	Sprite3: class extends self.ISpriteInstance {},
+	羊駝: class extends self.ISpriteInstance {},
+	小黑: class extends self.ISpriteInstance {}
 }
 }
 
@@ -4486,7 +4492,7 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
-
+		() => ""
 ];
 
 
